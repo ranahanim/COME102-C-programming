@@ -43,13 +43,13 @@ int main(int argc, char* argv[])
     if(f_plain_ptr == NULL)
     {
        printf("ERROR, PLAIN TEXT FILE COULD NOT BE OPENED.");
-       return 1; /* hata return deðeri */
+       return 1; /* hata return degeri */
       }
     
     if(f_encoded_ptr == NULL)
     {
        printf("ERROR, ENCODED TEXT FILE COULD NOT BE CREATED.");  
-      return 1;  /* hata return deðeri */
+      return 1;  /* hata return deÃ°eri */
       }
   
 	encode_message(f_plain_ptr, f_encoded_ptr);
@@ -196,7 +196,7 @@ int crypt_message(FILE *f_in_ptr, FILE *f_out_ptr)
 	int i=0;
 	int n=5;
 	
-	while(fscanf(f_in_ptr,"%c",&number)!= EOF)  /*bunu anlamadým EOF nedir? */  
+	while(fscanf(f_in_ptr,"%c",&number)!= EOF)  /*end of file */  
     {
                                          
           if(number == '1')
